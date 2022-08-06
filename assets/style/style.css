@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1F1F1F;
+}
+
+h1 {
+    color: #C9511D;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-bet {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.ul {
+    list-style: none;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0rem 1rem;
+}
+
+.ul li a:hover {
+    color: orange;
+}
+
+.flex-col-rev {
+    flex-direction: column-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-rev {
+    flex-direction: row-reverse;
+}
+
+.m-5 {
+    margin: 5rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+#image {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+/*
+colores:
+#1F1F1F --> black
+#C9511D --> orange
+#323232 --> gray
+*/
+
+.card {
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #323232;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+    transition: all 1.2s;
+    background-attachment: fixed;
+}
+.card section {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background: none;
+    transition: all 1.2s ;
+    border-radius: 10px;
+}
+.card:hover section{
+    background: #1F1F1F;
+}
+.card section p{
+    font-size: .9rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 90%;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.card:hover section p{
+    display: flex;
+    opacity: 1;
+}
+
+.card h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #C9511D;
+    background:#1F1F1F;
+    margin: 0 5rem;
+    padding: 1rem;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    color: whitesmoke;
+    margin: 1rem 5rem;
+}
+
+.center {
+    text-align: center;
+}
+.quote{
+    color: whitesmoke;
+}
+#tribute-info{
+    background-image: url(../media/1366_2000.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#linuxFoundation section{
+    flex-direction: row;
+}
+#linuxKernel{
+    background-image: url(../media/tux.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#gitAbout{
+    background-image: url(../media/quesogit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#linuxFoundation{
+    background-image: url(../media/LF_logo_color_rgb_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+}
+#cronology{
+    display: flex;
+    background: none;
+    padding: 1rem;
+    margin: 20rem 0;
+    align-items: center;
+    height: 800px;
+}
+#cronology section{
+    flex-direction: column;
+}
+#cronology p{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+#carouselContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#carouselContent span{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #C9511D;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+#carouselContent p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+#cronology h2{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    background: none;
+    font-size: 5rem;
+}
+#carousel{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    height: 800px;
+}
+#carousel img{
+    width: 1200px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+#next, #prev{
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    align-self: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#next:hover, #prev:hover{
+    background: #C9511D;
+}
+.footer{
+    background: #323232;
+    color: #C9511D;
+    padding: 2rem;
+}
+#hamburguer{
+    display: none;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    #cronology{
+        height: 600px;
+        margin: 1rem 0;
+    }
+    #cronology h2{
+        font-size: 1rem;
+    }
+    #carousel{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    #carousel img{
+        width: 200px;
+        height: 300px;
+    }
+    #carouselContent p{
+        font-size: .7rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .card h2{
+        height: auto;
+        width: auto;
+        padding: 0;
+        font-size: 1.6rem;
+        width: 100%;
+        padding: .3rem 0;
+    }
+    .ul{
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+        position: absolute;
+        top: 0%;
+        background: #1F1F1F;
+        padding-top: 50px;
+        
+    }
+    .ul li a{
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .ul li{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        height: auto;
+        width: 90%; 
+        margin: 0;  
+        margin-bottom: 1rem;
+    }
+    .card section p{
+        opacity: 1;
+        font-size: 1rem;
+        margin: 0;
+        padding: .3rem;
+        background: #323232;
+        text-align: center;
+        align-self: center;
+        border-radius: 10px;
+    }
+    .card section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .quote{
+        display: flex;
+        align-self: center;
+        text-align: center;
+        margin: 1rem 0;
+        font-size: .7rem;
+        width: 80%;
+    }
+    #nav{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    #hamburguer{
+        display: flex;
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        z-index: 33 ;
+        padding: 1rem;
+        font-size: 2rem;
+        border: none;
+        background: none;
+        color: whitesmoke;
+    }
+    #menu{
+        display: none;
+    }
+}
